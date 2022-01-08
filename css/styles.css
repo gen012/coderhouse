@@ -9,6 +9,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 html {
@@ -23,7 +24,6 @@ a {
 img {
 
     max-width: 100%;
-    width: auto;
     height: auto;
 }
 
@@ -32,30 +32,88 @@ main {
 }
 
 .nav-link {
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
 }
 
-.navbar-brand img {
-    height: 5.5rem;
+.nav__logo {
+    height: 5rem;
     margin-right: 2.2rem;
-    margin-left: 2.2rem;
+    margin-left: 1.2rem;
+}
+
+
+.carousel__h3{
+    font-size: 10.5rem;
+    text-shadow: 2px 2px #2A363B;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .carousel__h3{
+        font-size: 5.5rem;
+    }
+ 
+}
+.center__img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-bottom: 5rem;
+}
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:50%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.nosotros__foto{
+    height: auto;
+    width: auto;
 }
 
 .row h2 {
     color: #fff;
+    text-shadow: 1px 1px #2A363B;
     text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    ;
     padding: 3rem;
-    font-size: 2.2rem;
+    margin-bottom: 5rem;
+    font-size: 3.2rem;
     text-transform: uppercase;
+    border-bottom: 2px solid #FF847C;
+
+    
+}
+
+.row h3 {
+    color: #fff;
+    text-shadow: 1px 1px #2A363B;
+    text-align: center;
+    padding: 3rem;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    border-bottom: 0.5px solid #fff;
+    border-bottom-width: 0.2rem;
 }
 
 .container-fluid {
     background-image: url(../img/waves.svg);
     background-size: cover;
-    background-position: bottom;
+    background-position:top;
 }
+
+
 
 .col-sm p {
     padding-top: 5rem;
@@ -79,13 +137,13 @@ main {
 
 form {
     text-align: center;
-    padding: 3.5rem;
+    padding: .5rem;
     margin: 5rem;
-    gap: 2rem;
-    color: #fff;
-    font-size: 2.2rem;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgba(254, 206, 168, 0.4);
+    font-size: 2.7rem;
     line-height: 5rem;
-    border-radius: none;
+    border-radius:1rem
 }
 
 .contacto__bg {
@@ -99,7 +157,10 @@ form {
     text-align: center;
     margin-top: 3.5rem;
     text-transform: uppercase;
+    font-size: 2.5rem;
+    
 }
+
 
 /* Destinos */
 

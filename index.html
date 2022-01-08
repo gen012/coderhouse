@@ -5,8 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="../clase/css/styles.css">
 
   <title>Ignacio Agustin Genini</title>
@@ -16,9 +20,9 @@
   <!-- nav bar-->
   <header class="header__index">
 
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top ">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top  ">
       <!-- Brand -->
-      <a class="navbar-brand" href="#"> <img src="img/travel.png" alt="logo">Turismo Argentina</a>
+      <a class="navbar-brand" href="index.html"> <img src="img/travel.png" class = "nav__logo" alt="logo"></a>
 
       <!-- Toggler/collapsibe Button -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -27,9 +31,9 @@
 
       <!-- Navbar links -->
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="secciones/nosotros.html">Nosotros</a>
+        <ul class="navbar-nav ">
+          <li class="nav-item ">
+            <a class="nav-link justify-content-center" href="secciones/nosotros.html">Nosotros</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="secciones/destinos.html">Destinos</a>
@@ -46,7 +50,7 @@
 
     <!-- Carrousel -->
 
-    <div id="demo" class="carousel slide" data-ride="carousel">
+    <div id="demo" class="carousel carousel-fade slide" data-ride="carousel">
 
       <!-- Indicators -->
       <ul class="carousel-indicators">
@@ -56,29 +60,36 @@
       </ul>
 
       <!-- The slideshow -->
-      <div class="carousel-inner">
+      <div class="carousel-inner text-center">
         <div class="carousel-item active">
-          <img src="img/slide.jpg" alt="foto main">
-          <div class="carousel-caption">
-            <h3>Lorem ipsum dolor sit amet.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, at!</p>
-            <button type="button" class="btn btn-info">Info</button>
+          <img src="img/slide.jpg" class = "img-fluid" alt="foto main">
+          <div class="carousel-caption d-flex h-100 align-items-center justify-content-center">
+          <div class = "">
+            <h3 class = " carousel__h3 text-center ">Viajá</h3>
           </div>
-        </div>
-        <div class="carousel-item">
-          <img src="img/mendoza.jpg" alt="foto dos">
-          <div class="carousel-caption">
-            <h3>Lorem ipsum dolor sit amet.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, at!</p>
-            <button type="button" class="btn btn-info">Info</button>
+
+          
+          
+            
           </div>
         </div>
         <div class="carousel-item">
           <img src="img/slide3.jpg" alt="foto tres">
-          <div class="carousel-caption">
-            <h3>Lorem ipsum dolor sit amet.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, at!</p>
-            <button type="button" class="btn btn-info">Info</button>
+          <div class=" carousel-caption 
+          d-flex h-100 align-items-center justify-content-center ">
+          <div class = "">
+            <h3 class = " carousel__h3 text-center ">Conocé</h3>
+          </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/mendoza.jpg" alt="foto tres">
+          <div class=" carousel-caption 
+          d-flex h-100 align-items-center justify-content-center ">
+          <div class = "">
+            <h3 class = " carousel__h3 text-center ">Disfrutá</h3>
+          </div>
           </div>
         </div>
       </div>
@@ -94,41 +105,45 @@
     </div>
 
     <!--Container Fluid-->
-
-    <div class="container-fluid">
+    <div class= "container__img">
+    <div class=" container-fluid ">
       <div class="row">
-        <h2 class="bg-dark col-12">¿Que ofrecemos? </h2>
+        <h2 class="bg-dark col-12">Turismo Argentina </h2>
         <div class="row">
           <div class="col-sm">
-            <h2>Lorem ipsum dolor sit amet.</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate autem voluptatum hic quisquam,
-              cupiditate velit illum similique quibusdam accusantium aliquid dolorum, iste natus doloremque minus ab
-              recusandae sequi animi. Quae?</p>
+            <h2>¿Por qué viajar?</h2>
+            <p>Las razones para viajar son incalculables y diferentes porque dependen de cada persona. Viajamos para romper con la rutina, para tomar distancia de lo cotidiano. Para conocer y experimentar de primera mano nuevas culturas, formas de vida. ... Porque viajar es un ejercicio de tolerancia, paciencia, audacia y perspicacia.</p>
           </div>
-          <div class="col-sm">
+        
+          <div data-aos="flip-right" class="col-sm">
             </id>
-            <h2>Lorem ipsum dolor sit amet.</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure deleniti dolorem aut fuga tempore ipsam
-              qui laudantium consectetur excepturi natus voluptate, modi eligendi vitae facere quam iusto. Dicta, ipsum
-              ut?</p>
+            <h2>¿Turismo Argentina es una buena opción?</h2>
+            <p>Según sea tu perfil y cómo te gusta viajar, recurrir a Turismo Argentina puede ser la solución ideal.
+
+              Además, debido a la evolución que está teniendo el mundo del turismo, con una cada vez mayor oferta de plataformas y servicios en Internet que hacen cada vez más fácil organizar un viaje por tu cuenta, el tipo de servicio que ofrecen las agencias de viajes se adapta cada vez más a tus necesidades.</p>
           </div>
         </div>
-        <div class="col-sm">
-          <h2>Lorem ipsum dolor sit amet.</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate autem voluptatum hic quisquam,
-            cupiditate velit illum similique quibusdam accusantium aliquid dolorum, iste natus doloremque minus ab
-            recusandae sequi animi. Quae?</p>
+
+        
+        
+        <div data-aos="flip-right" class="col-sm justify-content-left">
+          <h2>Elegí tu proximo destino en solo minutos</h2>
+          <p>Te ofrecemos una gran cantidad de destinos para que realices tu proximo viaje. Solo tenes que elegir tu fecha, alojamiento y destino. <br>Del resto nos encargamos nosotros ;).</p>
         </div>
-        <div class="col-sm">
-          </id>
-          <h2>Lorem ipsum dolor sit amet.</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure deleniti dolorem aut fuga tempore ipsam qui
-            laudantium consectetur excepturi natus voluptate, modi eligendi vitae facere quam iusto. Dicta, ipsum ut?
+        <div data-aos="flip-right" class= "col-sm">
+          <h2>Pagá en cuotas sin interés</h2>
+          <p>Tenemos disponibles distintas formas de pago, tanto transferencia bancaria, como pago con tarjeta o efectivo. <br>Lo mejor de todo? <br>Te ofrecemos hasta <u>12 cuotas sin </u>interes en tu paquete turístico.
           </p>
         </div>
       </div>
+      <div data-aos="flip-right" class = "row col-12">
+        <img src="img/travel2.svg" class= "center__img img-fluid">
+      </div>
     </div>
+    
     </div>
+    
+  </div>
 
 
 
@@ -147,7 +162,10 @@
     </footer>
     <!-- Footer -->
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
