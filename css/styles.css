@@ -1,174 +1,143 @@
-:root {
-    --verde: #99B898;
-    --amarillo: #FECEA8;
-    --naranja: #FF847C;
-    --rojo: #E84A5F;
-    --negro: #2A363B;
-}
-
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 img {
-
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 main {
-    background: linear-gradient(90deg, rgba(248, 177, 149, 0.5) 0%, rgba(254, 206, 168, 0.3) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(248, 177, 149, 0.5)), to(rgba(254, 206, 168, 0.3)));
+  background: linear-gradient(90deg, rgba(248, 177, 149, 0.5) 0%, rgba(254, 206, 168, 0.3) 100%);
 }
 
 .nav-link {
-    font-size: 2rem;
-    text-align: center;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .nav__logo {
-    height: 5rem;
-    margin-right: 2.2rem;
-    margin-left: 1.2rem;
+  height: 5rem;
+  margin-right: 2.2rem;
+  margin-left: 1.2rem;
 }
 
-
-.carousel__h3{
-    font-size: 10.5rem;
-    text-shadow: 2px 2px #2A363B;
-    text-transform: uppercase;
-    font-weight: bold;
+.carousel__h3 {
+  font-size: 10.5rem;
+  text-shadow: 2px 2px #2A363B;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {
-    .carousel__h3{
-        font-size: 5.5rem;
-    }
- 
-}
-.center__img{
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    padding-bottom: 5rem;
-}
-.map-responsive{
-    overflow:hidden;
-    padding-bottom:50%;
-    position:relative;
-    height:0;
-}
-.map-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+  .carousel__h3 {
+    font-size: 5.5rem;
+  }
 }
 
-.nosotros__foto{
-    height: auto;
-    width: auto;
+.center__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-bottom: 5rem;
+}
+
+.nosotros__foto {
+  height: auto;
+  width: auto;
 }
 
 .row h2 {
-    color: #fff;
-    text-shadow: 1px 1px #2A363B;
-    text-align: center;
-    ;
-    padding: 3rem;
-    margin-bottom: 5rem;
-    font-size: 3.2rem;
-    text-transform: uppercase;
-    border-bottom: 2px solid #FF847C;
-
-    
+  color: #fff;
+  text-shadow: 1px 1px #2A363B;
+  text-align: center;
+  padding: 3rem;
+  margin-bottom: 5rem;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid #FF847C;
 }
 
-.row h3 {
-    color: #fff;
-    text-shadow: 1px 1px #2A363B;
-    text-align: center;
-    padding: 3rem;
-    font-size: 3.2rem;
-    text-transform: uppercase;
-    border-bottom: 0.5px solid #fff;
-    border-bottom-width: 0.2rem;
+.row h2 h3 {
+  color: #fff;
+  text-shadow: 1px 1px #2A363B;
+  text-align: center;
+  padding: 3rem;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  border-bottom: 0.5px solid #fff;
+  border-bottom-width: 0.2rem;
 }
 
 .container-fluid {
-    background-image: url(../img/waves.svg);
-    background-size: cover;
-    background-position:top;
+  background-image: url(../img/waves.svg);
+  background-size: cover;
+  background-position: top;
 }
 
-
-
 .col-sm p {
-    padding-top: 5rem;
-    padding-bottom: 20rem;
-    font-size: 2.2rem;
-    color: #FECEA8;
-    text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 20rem;
+  font-size: 2.2rem;
+  color: #FECEA8;
+  text-align: center;
 }
 
 /* Promociones */
-
 .promociones__container {
-    text-align: center;
+  text-align: center;
 }
 
 .promociones__h2 {
-    color: #2A363B;
+  color: #2A363B;
 }
 
 /* Contacto */
-
 form {
-    text-align: center;
-    padding: .5rem;
-    margin: 5rem;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: rgba(254, 206, 168, 0.4);
-    font-size: 2.7rem;
-    line-height: 5rem;
-    border-radius:1rem
+  text-align: center;
+  padding: .5rem;
+  margin: 5rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: rgba(254, 206, 168, 0.4);
+  font-size: 2.7rem;
+  line-height: 5rem;
+  border-radius: 1rem;
 }
 
 .contacto__bg {
-    background-image: url(../img/benjamin-voros-jv15x2Gs5F8-unsplash.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(../img/benjamin-voros-jv15x2Gs5F8-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .contacto__h2 {
-    text-align: center;
-    margin-top: 3.5rem;
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    
+  text-align: center;
+  margin-top: 3.5rem;
+  text-transform: uppercase;
+  font-size: 2.5rem;
 }
-
 
 /* Destinos */
-
 /* nosotros*/
-
 .nosotros__img {
-    padding: 5rem;
-    margin-bottom: 15rem;
-    width: 50%;
-    border-bottom: 1px solid #fff;
+  padding: 5rem;
+  margin-bottom: 15rem;
+  width: 50%;
+  border-bottom: 1px solid #fff;
 }
+/*# sourceMappingURL=styles.css.map */
