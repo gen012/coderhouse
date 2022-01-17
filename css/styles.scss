@@ -1,9 +1,22 @@
 //paleta de colores
-$verde: #99B898;
-$amarillo: #FECEA8;
-$naranja: #FF847C;
-$rojo:#E84A5F;
-$negro: #2A363B;
+$color: map-merge(
+    (
+        "verde": #99B898
+        "amarillo": #FECEA8
+        "naranja": #FF847C
+        "rojo": #E84A5F
+        "negro": #2A363B
+        ),
+$color
+);
+
+@mixin tamaño($width, $height){
+    height: $height;
+    width: $width;
+}
+
+
+
 
 $font: sans-serif;
 $negrita: bold;
@@ -15,7 +28,7 @@ $negrita: bold;
 }
 
 html {
-    box-sizing: border-box;
+    box-sizing: content-box;
     font-size: 62.5%;
 }
 
@@ -25,8 +38,7 @@ a {
 
 img {
 
-    max-width: 100%;
-    height: auto;
+    @include tamaño(auto, 100%);
 }
 
 main {
@@ -108,7 +120,7 @@ main {
     padding-top: 5rem;
     padding-bottom: 20rem;
     font-size: 2.2rem;
-    color: $amarillo;
+    color: map-get($color, amarilo);
     text-align: center;
 }
 
@@ -119,7 +131,7 @@ main {
 }
 
 .promociones__h2 {
-    color: $negro;
+    color: map-get($color, negro);
 }
 
 /* Contacto */
