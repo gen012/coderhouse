@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel=stylesheet href="../css/styles.css">
+    <title>Contacto</title>
+</head>
+
+<body class="contacto__bg">
+
+
+
+    <!-- nav bar-->
+    <header>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top ">
+            <!-- Brand -->
+            <a class="navbar-brand" href="../index.html"> <img src="../img/travel.png" class = "nav__logo" alt="logo"></a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav align-text">
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinos.html">Destinos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="promociones.html">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <main class="contacto__bg">
+        <div class="contacto__h3 row">
+            <h3 class=" col-12">Contactanos</h2>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="text">Nombre:</label>
+                <input type="text" class="form-control" placeholder="Nombre" id="email">
+            </div>
+            <div class="form-group">
+                <label for="email">Correo:</label>
+                <input type="email" class="form-control" placeholder="Correo">
+            </div>
+            <div class="form-group">
+                <label for="textarea">Su mensaje:</label>
+                <textarea class="form-control" rows="3" placeholder="Escriba aquí"></textarea>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" name="gender" id="radioMale" checked>
+                        <label class="form-check-label" for="radioMale">Hombre</label>
+                    </div>
+                    <div class="form-check form-check-inline ms-3">
+                        <input type="radio" class="form-check-input" name="gender" id="radioFemale">
+                        <label class="form-check-label" for="radioFemale">Mujer</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox"> Quiero saber más
+                </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue bg-warning">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2021 Copyright Ignacio Agustin Genini:
+            <a href="https://coderhouse.com/"> Coderhouse.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

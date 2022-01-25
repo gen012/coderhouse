@@ -1,0 +1,24 @@
+{
+  "name": "turismoargentina",
+  "version": "1.0.0",
+  "description": "pagina destinada a ofrecer distintos paqueque desean viajar al interior del pais",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "4.6.1",
+    "node-sass": "^7.0.1",
+    "nodemon": "2.0.15"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gen012/coderhouse.git"
+  },
+  "author": "Ignacio Agustin Genini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gen012/coderhouse/issues"
+  },
+  "homepage": "https://github.com/gen012/coderhouse#readme"
+}
