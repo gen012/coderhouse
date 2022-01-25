@@ -1,6 +1,6 @@
 {
   "name": "turismoargentina",
-  "version": "1.0.0",
+  "version": "1.0",
   "description": "pagina destinada a ofrecer distintos paqueque desean viajar al interior del pais",
   "main": "index.js",
   "dependencies": {
